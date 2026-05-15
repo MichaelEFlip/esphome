@@ -100,11 +100,13 @@ CELL_SCHEMA = cv.Schema(
             unit_of_measurement=UNIT_VOLT,
             accuracy_decimals=3,
             device_class=DEVICE_CLASS_VOLTAGE,
+            state_class=STATE_CLASS_MEASUREMENT,
         ),
         cv.Optional(CONF_TEMPERATURE): sensor.sensor_schema(
             unit_of_measurement=UNIT_CELSIUS,
             accuracy_decimals=1,
             device_class=DEVICE_CLASS_TEMPERATURE,
+            state_class=STATE_CLASS_MEASUREMENT,
         ),
     }
 )

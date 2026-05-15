@@ -31,7 +31,7 @@ CONF_MOS_TEMPERATURE = "mos_temperature"
 CONF_CELLS = "cells"
 CONF_CELL = "cell"
 
-NUM_CELLS = 15
+NUM_CELLS = 16
 
 # Sensors from the "pwr" command
 TYPES: dict[str, cv.Schema] = {
